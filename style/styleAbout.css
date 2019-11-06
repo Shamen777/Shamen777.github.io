@@ -1,0 +1,93 @@
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+
+}
+
+.main div{
+    height: 100%;
+    width: 50%;
+    z-index: -2;
+}
+
+.skills{
+    width: 80%;
+    display: flex;
+    position: relative;
+    top: 100px;
+    left: 10%;
+    flex-wrap: wrap;
+    background-color: #e5e5e5;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+}
+
+.skill:hover{
+    box-shadow: 0px 0px 20px gray ;
+}
+
+.skill{
+    width: calc(50% - 10px);
+    background-color: #e0e0e0;
+    height: 70px;
+    margin: 5px;
+    padding-top: 10px;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.skill h6{
+    margin-left: auto;
+    margin-right: 20px;
+    font-size: 17px;
+}
+
+.scale{
+    width: calc(100% - 20px);
+    height: 10px;
+    background: #fff;
+    position: relative;
+}
+
+.scale::after,
+.scale::before{
+    content: " ";
+    background-color: #efefee;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.scale::before{
+    background: #ed30ba;
+    z-index: 1;
+    transition: 0.4s;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.skill:hover .scale::before{
+    transform: scaleX(1);
+}
+
+.skill:nth-child(1) .scale:after,
+.skill:nth-child(1) .scale:before{
+    width: 50%;
+}
+
+.skill:nth-child(2) .scale:after,
+.skill:nth-child(2) .scale::before{
+    width: 40%;
+}
+
+.skill:nth-child(3) .scale:after,
+.skill:nth-child(3) .scale:before{
+    width: 30%;
+}
+
+.skill:nth-child(4) .scale:after,
+.skill:nth-child(4) .scale:before{
+    width: 60%;
+}
