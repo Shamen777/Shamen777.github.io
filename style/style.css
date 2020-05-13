@@ -4,6 +4,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --ping: #ed30ba;
+    --silver: #8d8d8d;
+}
+
+::-webkit-scrollbar{
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--ping);
+    border-radius: 6px;
 }
 
 a{
@@ -62,7 +73,7 @@ nav{
     margin-left: 50px;
 }
 .logo img{
-    height: 70px;
+    height: 3em;
     filter: grayscale(1);
     transition: 0.5s;
 }
@@ -237,20 +248,134 @@ h2{
 }
 
 footer{
-    background-color: #e2e2e2;
+    height: 100vh;
+    background-color: #1d1c1b;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    color: #8d8d8d;
+}
+
+.footer__inner1{
+    width: 45%;
+}
+
+.footer__inner2{
+    width: 55%;
+}
+
+.footer__inner1 > img{
+    width: 7em;
+}
+
+.footer__inner1{
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin-left: 10%;
 }
 
-.icons img{
-    padding: 15px;
+.footer__inner1 span{
+    margin-top: 1.5em;
+    margin-bottom: 9em;
 }
 
-footer h6{
-    padding: 15px 0 ;
+.social ul{
+    display: flex;
 }
+
+.social ul li{
+    list-style: none;
+}
+
+.social ul li a{
+    color: var(--silver);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    font-size: 3em;
+    transition: ease-in 0.2s;
+    z-index: 1;
+}
+
+.social ul li a:hover{
+    color: #fff;
+}
+
+.social ul li a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: var(--silver);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.2s cubic-bezier(.95,.32,.37,1.31);
+    z-index: -1;
+}
+
+.social ul li a:hover::before{
+    transform: scale(1);
+}
+
+ul li:nth-child(1) a:hover:before{
+    background-color: #e4405f;
+}
+
+ul li:nth-child(2) a:hover:before{
+    background-color: #dd4b39;
+}
+
+ul li:nth-child(3) a:hover:before{
+    background-color: #3b5999;
+}
+
+.footer__inner2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__inner2 a{
+    color: var(--ping);
+    position: relative;
+}
+
+.footer__inner2 a::after{
+    content: "";
+    background-color: var(--ping);
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: ease-in 0.2s;
+    transform-origin: left;
+}
+
+.footer__inner2 a:hover::after{
+    transform: scaleX(1);   
+}
+
+.footer__inner2 div + div{
+    margin-top: 0.7em;
+}
+
+.footer__inner2 span{
+    text-transform: uppercase;
+    margin-bottom: 3em;
+    letter-spacing: 3px;
+}
+
+
+
+
+
 
 .preloader{
     position: fixed;
@@ -259,45 +384,46 @@ footer h6{
     height: 100%;
     width: 100%;
     z-index: 100;
-    background: #fff;
+    background: #000;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: ease-in 0.7s;
 }
-
 
 .percent{
-    height: 50px;
-    width: 50px;
-    background: #000;
-    animation: circle 2s infinite ease;
+    font-size: 6em;
+    position: relative;
+    height: 1.25em;
 }
 
-@keyframes circle{
-    0%{ 
-        background: #8d8d8d;
-        border-radius: 50px ;
-        transform: rotate(0deg);
-     }
-    25%{ 
-        background: black;
-        border-radius: 15px ;
-        transform: rotate(90deg);
+.percent span{
+    color: #fff;
+    display: none;
+}
+
+
+.percent::before{
+    content: "";
+    background-color: #fff;
+    width: 1em;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(100px,-15px);
+    animation: terminal 1s linear infinite;
+}
+
+@keyframes terminal{
+    0%{
+        background-color: #fff;
     }
-    50%{ 
-        background: gray;
-        border-radius: 50px ;
-        transform: rotate(180deg);
+    50%{
+        background-color: #000;
     }
-    75%{ 
-        background: #ed30ba;
-        border-radius: 15px ; 
-        transform: rotate(270deg);
-    }
-    100%{ 
-        background: white;
-        border-radius: 50px; 
-        transform: rotate(360deg);
+    100%{
+        background-color: #fff;
     }
 }
 
