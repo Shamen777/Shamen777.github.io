@@ -4,62 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>about us</title>
+    <title>about</title>
     <link href="../style/style.css" rel="stylesheet">
     <link href="../style/styleAbout.css" rel="stylesheet">
-    <script src="../script/script.js" defer></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">6
 </head>
 <body>
-   <div class="preloader">
-                <div class="percent"></div>
+    <div class="preloader">
+        <div class="percent">
+            <span class="w letters">A</span>
+            <span class="a1 letters">B</span>
+            <span class="m letters">O</span>
+            <span class="a2 letters">U</span>
+            <span class="a2 letters">T</span>
         </div>
-        <div class="main">
-            <div class="bgLines" style="background: #e5e5e5;"></div>
-            <div class="bgLines3" style="background: #f5a9f1"></div></div>
+    </div>
         <nav class="nav">
             <a href="../index.html" class="logo"><img src="../image/logo.png" alt="logo" ></a>
             <ul class="menu">
                 <li><a href="../index.html" class="link">Home</a></li>
                 <li><a href="about.html" class="link">About</a></li>
-                <li><a href="work.html" class="link">Work</a></li>
+                <!-- <li><a href="work.html" class="link">Work</a></li> -->
                 <li><a href="contacts.html" class="link">Contact</a></li>
             </ul>
             <div class="menuBtn">
                 <span></span>
             </div>
         </nav>
-    <div class="skills">
-        <div class="skill">
-            <p class="nameOfSkill">HTML</p>
-            <h6>50%</h6>
-            <div class="scale"></div>
+        <h2>-Skills-</h2>
+        <div class="skillBlock">
+            <canvas width="400" height="300" id="canvas">           
+            </canvas>
+            <canvas width="400" height="300">
+            </canvas>
+            <canvas width="400" height="300">
+            </canvas>
+            <canvas width="400" height="300">
+            </canvas>
         </div>
-        <div class="skill">
-            <p class="nameOfSkill">CSS</p>
-            <h6>40%</h6>
-            <div class="scale"></div>
+        <div class="skillBlock--name">
+            <div class="percent1">
+                <span class="nameOfSkill">HTML</span>
+                <span class="percentOfSkill">80%</span>
+                <svg width="374" height="374">
+                    <circle class="circle3" stroke="#e0e0e0" stroke-width="40" cx="187" cy="187" r="107" fill="transparent">
+                    </circle>
+                    <circle class="circle circle1" stroke="#1d1c1b" stroke-width="40" cx="187" cy="187" r="107" fill="transparent">
+                    </circle>                  
+                </svg>
+            </div>
+            <div class="percent1">
+                <span class="nameOfSkill">CSS</span>
+                <span class="percentOfSkill">70%</span>
+                <svg width="374" height="374">
+                    <circle class="circle3" stroke="#e0e0e0" stroke-width="40" cx="187" cy="187" r="107" fill="transparent">
+                    </circle>
+                    <circle class="circle circle2" stroke="#000" stroke-width="40" cx="187" cy="187" r="107" fill="transparent"></circle>
+                </svg>
+            </div>
+            <div class="percent1">
+                <span class="nameOfSkill">JS</span>
+                <span class="percentOfSkill">50%</span>
+                <svg width="374" height="374">
+                    <circle class="circle3" stroke="#e0e0e0" stroke-width="40" cx="187" cy="187" r="107" fill="transparent">
+                    </circle>
+                    <circle class="circle circleJS" stroke="#000" stroke-width="40" cx="187" cy="187" r="107" fill="transparent"></circle>
+                </svg>
+            </div>
+            <div class="percent1">
+                <span class="nameOfSkill">REACT</span>
+                <span class="percentOfSkill">40%</span>
+                <svg width="374" height="374">
+                    <circle class="circle3" stroke="#e0e0e0" stroke-width="40" cx="187" cy="187" r="107" fill="transparent">
+                    </circle>
+                    <circle class="circle circle4" stroke="#000" stroke-width="40" cx="187" cy="187" r="107" fill="transparent"></circle>
+                </svg>
+            </div>
         </div>
-        <div class="skill">
-            <p class="nameOfSkill">JavaScript</p>
-            <h6>30%</h6>
-            <div class="scale"></div>
+        <div class="about_text">
+            <div class="about_img">
+                <img src="../image/clip2.jpg" alt="img">
+            </div>
+            <div class="about_teaxt_block">
+                <h4>Some text about myself</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae velit consequatur corrupti id maxime cumque ex, beatae rerum libero animi at officiis necessitatibus aliquid labore reprehenderit nemo eos numquam pariatur?</p>
+            </div>
         </div>
-        <div class="skill">
-            <p class="nameOfSkill">Photoshop</p>
-            <h6>60%</h6>
-            <div class="scale"></div>
-        </div>
-    </div>
-    <!-- <footer>
-        <a name='contacts'></a>
-        <div class="icons">
-            <a href="#"><img src="../image/facebook.png" alt="icon"></a>
-            <a href="#"><img src="../image/instagram.png" alt="icon"></a>
-            <a href="#"><img src="../image/twitter.png" alt="icon"></a>
-        </div>
-        <h6><a href="tel:(996)-706-201-206">(996)-706-201-206</a></h6>
-        <h6><a href="mailto:shama@mail.com">shama@mail.com</a></h6>
-        <h6><a href="">st.Ahunbaeva 114</a></h6>
-    </footer> -->
+
+        <footer>
+            <div class="footer__inner1">
+                <img src="/image/logo.png">
+                <span>Make something awesome in this candy shop</span>
+                <div class="social">
+                    <ul>
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__inner2">
+                <span>contact me:</span>
+                <div><a href="#">(+996)-706-201-206</a></div>
+                <div><a href="#">nurlanuulushama@gmail.com</a></div>
+            </div>
+        </footer>
+
+        <script src="../script/about.js"></script>
+        <script src="../script/script.js"></script>
 </body>
 </html>

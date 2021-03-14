@@ -7,18 +7,27 @@
     <title>contact us</title>
     <link href="../style/style.css" rel="stylesheet">
     <link href="../style/styleContact.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="../script/script.js" defer></script>
 </head>
 <body>
         <div class="preloader">
-                <div class="percent"></div>
+            <div class="percent">
+                <span class="w letters">C</span>
+                <span class="a1 letters">O</span>
+                <span class="m letters">N</span>
+                <span class="a2 letters">T</span>
+                <span class="a2 letters">A</span>
+                <span class="a2 letters">C</span>
+                <span class="a2 letters">T</span>
+            </div>
         </div>
         <nav class="nav">
             <a href="../index.html" class="logo"><img src="../image/logo.png" alt="logo" ></a>
             <ul class="menu">
                 <li><a href="../index.html" class="link">Home</a></li>
                 <li><a href="about.html" class="link">About</a></li>
-                <li><a href="work.html" class="link">Work</a></li>
+                <!-- <li><a href="work.html" class="link">Work</a></li> -->
                 <li><a href="contacts.html" class="link">Contact</a></li>
             </ul>
             <div class="menuBtn">
@@ -31,7 +40,7 @@
             <h4>Or call us</h4>
             <a href="tel:(996)-706-201-206"><p>(996)-706-201-206</p></a>
         </div>
-        <form action="main.php" method="POST">
+        <form action="https://formspree.io/maypeqze" method="POST"> 
             <input type="text" name="firstName" placeholder="First Name">
             <input type="text" name="lastName" placeholder="Last Name">
             <input type="text" name="email" placeholder="Your mail adress">
@@ -39,16 +48,23 @@
             <input type="submit" value="Submit" class="btn">
         </form>
 
-    <!-- <footer>
-        <a name='contacts'></a>
-        <div class="icons">
-            <a href="#"><img src="../image/facebook.png" alt="icon"></a>
-            <a href="#"><img src="../image/instagram.png" alt="icon"></a>
-            <a href="#"><img src="../image/twitter.png" alt="icon"></a>
-        </div>
-        <h6><a href="tel:(996)-706-201-206">(996)-706-201-206</a></h6>
-        <h6><a href="mailto:shamakot@mail.com">esenkozhoev@mail.com</a></h6>
-        <h6><a href="">st.Ahunbaeva 114</a></h6>
-    </footer> -->
+        <footer>
+            <div class="footer__inner1">
+                <img src="/image/logo.png">
+                <span>Make something awesome in this candy shop</span>
+                <div class="social">
+                    <ul>
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__inner2">
+                <span>contact me:</span>
+                <div><a href="#">(+996)-706-201-206</a></div>
+                <div><a href="#">nurlanuulushama@gmail.com</a></div>
+            </div>
+        </footer>
 </body>
 </html>
