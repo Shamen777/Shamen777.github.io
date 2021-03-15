@@ -490,6 +490,10 @@ ul li:nth-child(3) a:hover:before{
 
 
 @media screen and (max-width: 765px){
+    .percent{
+        font-size: 4em;
+    }
+
     .backgroundImg{
         width: 100%;
         top: auto;
@@ -719,6 +723,10 @@ ul li:nth-child(3) a:hover:before{
         margin-left: 10%;
     }
 
+    .footer__inner1 > img{
+        width: 4em;
+    }
+
     .footer__inner1{
         margin-top: 5em;
         margin-bottom: 2em;
@@ -734,5 +742,14 @@ ul li:nth-child(3) a:hover:before{
     
     footer h6{
         padding: 15px 0 ;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .percent{
+        font-size: 3em;
+    }
+    .percent::before{
+        transform: translate(50px, 0px);
     }
 }
